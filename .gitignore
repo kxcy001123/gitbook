@@ -4,6 +4,7 @@
 /node_modules
 
 # production
+_book
 /dist
 docker/dist
 
