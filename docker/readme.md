@@ -53,5 +53,26 @@
 
   ```
     docker image build gitbook:0.0.1 .
+  ```
+
+- 启动 container
 
   ```
+    docker container run -p 3301:4000 -it gitbook:0.0.1
+  ```
+
+  ctrl+c 退出 node，
+
+  ```
+    docker container ls -all
+  ```
+
+  查看 docker 容器
+
+  ```
+    docker container start id
+  ```
+
+  通过 start 命令启动 container
+
+- 搞定～
