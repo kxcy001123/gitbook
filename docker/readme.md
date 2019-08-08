@@ -22,8 +22,28 @@
      ```
 
    - 常用命令
+
      ```
        docker image pull   // 拉取docker Image
+       docker image build
        docker image ls     // 查看本地Image 列表
        docker container run   // docker 容器启动
+       docker container ls
      ```
+
+3. 尝试将这个 gitbook 用 docker 部署到我的阿里云上
+
+   - 新建 Dockerfile 文件
+
+   ```dockerfile
+      // 继承node镜像
+     FROM node:10.15.3
+     COPY . /app
+     WORKDIR /app
+     RUN npm config set registry https://registry.npm.taobao.org && \
+         npm install gitbook-cli -g && \
+         gitbook -V
+     EXPOSE 4000
+     CMD ['sh', '-c', "gitbook install ; gitbook serve "]
+
+   ```
