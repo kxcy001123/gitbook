@@ -49,30 +49,31 @@
 
    ```
 
-- build image
+   - push 到 github 上
+   - 阿里云拉取代码
 
-  ```
-    docker image build gitbook:0.0.1 .
-  ```
+   - build image
 
-- 启动 container
+     ```
+       docker image build gitbook:0.0.1 .
+     ```
 
-  ```
-    docker container run -p 3301:4000 -it gitbook:0.0.1
-  ```
+   - 启动 container
 
-  ctrl+c 退出 node，
+     ```
+       docker container run -p 3301:4000 -it gitbook:0.0.1
+     ```
 
-  ```
-    docker container ls -all
-  ```
+   - ctrl+c 退出 node，
 
-  查看 docker 容器
+   - 查看 docker 容器
+     ```
+      docker container ls -all
+     ```
+   - 通过 start 命令启动 container
 
-  ```
-    docker container start id
-  ```
-
-  通过 start 命令启动 container
+   ```
+     docker container start id
+   ```
 
 - 搞定～
