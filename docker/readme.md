@@ -27,6 +27,7 @@
        docker image pull   // 拉取docker Image
        docker image build
        docker image ls     // 查看本地Image 列表
+       docker image rm
        docker container run   // docker 容器启动
        docker container ls
      ```
@@ -41,9 +42,16 @@
      COPY . /app
      WORKDIR /app
      RUN npm config set registry https://registry.npm.taobao.org && \
-         npm install gitbook-cli -g && \
-         gitbook -V
+      npm install gitbook-cli -g && \
+      gitbook -V && \
+      gitbook install
      EXPOSE 4000
-     CMD ['sh', '-c', "gitbook install ; gitbook serve "]
 
    ```
+
+- build image
+
+  ```
+    docker image build gitbook:0.0.1 .
+
+  ```
