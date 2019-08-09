@@ -14,6 +14,7 @@
     * [Nginx 命令](nginx/commond.md)
 * Docker 相关
     * [Docker 入门](docker/readme.md)
+    * [部署 gitbook](docker/deploy.md)
 * [Mysql](Mysql/README.md)
 * [测试相关](test/README.md)
 * [Three.js 学习记录](three/README.md)

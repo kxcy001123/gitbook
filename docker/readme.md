@@ -52,10 +52,10 @@
    - push 到 github 上
    - 阿里云拉取代码
 
-   - build image
+   - build image 默认使用 Dockerfile 文件， 可用 -f xx 指定文件
 
      ```
-       docker image build gitbook:0.0.1 .
+       docker image build -t gitbook:0.0.1 (-f xx) .
      ```
 
    - 启动 container
