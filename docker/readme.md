@@ -28,8 +28,9 @@
        docker image build
        docker image ls     // 查看本地Image 列表
        docker image rm
-       docker container run   // docker 容器启动
+       docker container run -p -v -it   // docker 容器启动
        docker container ls
+       docker cp
      ```
 
 3. 尝试将这个 gitbook 用 docker 部署到我的阿里云上

@@ -3,6 +3,8 @@
 * [介绍](README.md)
 * [Markdown](markdown/README.md)
 * [工作流](workflow/README.md)
+* [问题记录](issue/README.md)
+    * [接口请求下载数据流文件](issue/downLoadFile.md)
 * [webpack](webpack/README.md)
     * [webpack 搭建过程中遇到的问题](webpack/QA.md)
 * React 相关
@@ -15,6 +17,7 @@
 * Docker 相关
     * [Docker 入门](docker/readme.md)
     * [部署 gitbook](docker/deploy.md)
+    * [部署 gitbook2](docker/deploy2.md)
 * [Mysql](Mysql/README.md)
 * [测试相关](test/README.md)
 * [Three.js 学习记录](three/README.md)

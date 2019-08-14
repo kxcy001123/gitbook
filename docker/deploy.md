@@ -2,7 +2,7 @@
 
 #### 上面的 docker 部署很弱智，每次提交代码，docker 镜像都需要 build 一次，容器也需要重新 run
 
-#### 改进
+#### 改进 （这种也不好，要把 github 公钥放进 docker 中，）
 
 1. 创建 `Dockerfile_v2`, gitbook 基础镜像
 
